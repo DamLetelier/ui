@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-12-2016 a las 21:51:29
+-- Tiempo de generación: 12-12-2016 a las 23:15:47
 -- Versión del servidor: 5.7.9
 -- Versión de PHP: 5.6.16
 
@@ -182,30 +182,26 @@ CREATE TABLE IF NOT EXISTS `asistencia` (
   `id_asistencia` int(9) NOT NULL AUTO_INCREMENT,
   `rut_alumno` varchar(20) NOT NULL,
   `tipo_asistencia` varchar(10) NOT NULL,
-  `nombre_alu` varchar(20) NOT NULL,
-  `apellido_alu` varchar(20) NOT NULL,
   `recorrido` varchar(20) NOT NULL,
   `fecha` varchar(20) NOT NULL,
   PRIMARY KEY (`id_asistencia`),
-  KEY `rut_alumno` (`rut_alumno`),
-  KEY `apellido_alu` (`apellido_alu`),
-  KEY `nombre_alu` (`nombre_alu`)
+  KEY `rut_alumno` (`rut_alumno`)
 ) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `asistencia`
 --
 
-INSERT INTO `asistencia` (`id_asistencia`, `rut_alumno`, `tipo_asistencia`, `nombre_alu`, `apellido_alu`, `recorrido`, `fecha`) VALUES
-(5, '21265324-5', 'Ausente', 'Roberto', 'Maximo', 'Vuelta', '13/10/2016'),
-(4, '19326543-5', 'Ausente', 'Maximo', 'Gonzalez', 'Ida', '27/10/2016'),
-(6, '22344796-1', 'Ausente', 'Amaia', 'Lopez', 'Ida', '27/10/2016'),
-(7, '21265324-5', 'Ausente', 'Maria Teresa', 'Rodriguez', 'Ida', '15/10/2016'),
-(8, '23057189-9', 'Presente', 'Ana Maria', 'Bustos', 'Ida', '14/03/2016'),
-(9, '23711886-3', 'Presente', 'Maria Pilar', 'Lopez', 'Vuelta', '15/09/2016'),
-(10, '24000978-1', 'Presente', 'David', 'Rodriguez', 'Ida', '16/10/2016'),
-(11, '24046969-3', 'Presente', 'Laura', 'Lopez', 'Vuelta', '17/10/2016'),
-(12, '24065960-3', 'Presente', 'Marta', 'Lopez', 'Vuelta', '18/07/2016');
+INSERT INTO `asistencia` (`id_asistencia`, `rut_alumno`, `tipo_asistencia`, `recorrido`, `fecha`) VALUES
+(5, '21265324-5', 'Ausente', 'Vuelta', '13/10/2016'),
+(4, '19326543-5', 'Ausente', 'Ida', '27/10/2016'),
+(6, '22344796-1', 'Ausente', 'Ida', '27/10/2016'),
+(7, '21265324-5', 'Ausente', 'Ida', '15/10/2016'),
+(8, '23057189-9', 'Presente', 'Ida', '14/03/2016'),
+(9, '23711886-3', 'Presente', 'Vuelta', '15/09/2016'),
+(10, '24000978-1', 'Presente', 'Ida', '16/10/2016'),
+(11, '24046969-3', 'Presente', 'Vuelta', '17/10/2016'),
+(12, '24065960-3', 'Presente', 'Vuelta', '18/07/2016');
 
 -- --------------------------------------------------------
 
