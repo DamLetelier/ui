@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Material UI One Page Theme</title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+
+<!--Navigation-->
+<div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" id="logo-container" class="brand-logo">SB System</a><br>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class='dropdown-button' href="#asistente" data-activates='asistente1'>Asistente<i class="mdi-navigation-arrow-drop-down  right"></i></a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id='asistente1' class='dropdown-content'>
+                        <li><a href="asisreg.html">Registrar</a></li>
+                        <li><a href="asiscon.html">Consultar</a></li>
+                        <li><a href="asismod.html">Modificar</a></li>
+                        <li><a href="asiseli.html">Eliminar</a></li>
+                        <li><a href="asiale.html">Alertas</a></li>
+                    </ul>
+                    <li><a class='dropdown-button' href="#choferes1" data-activates='choferes1'>Choferes<i class="mdi-navigation-arrow-drop-down  right"></i></a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id='choferes1' class='dropdown-content'>
+                        <li><a href="chofreg.html">Registrar</a></li>
+                        <li><a href="chofcon.html">Consultar</a></li>
+                        <li><a href="chofmod.html">Modificar</a></li>
+                        <li><a href="chofeli.html">Eliminar</a></li>
+                    </ul>
+                    <li><a class='dropdown-button' href="#apoderado" data-activates='apoderado1'>Apoderado<i class="mdi-navigation-arrow-drop-down  right"></i></a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id='apoderado1' class='dropdown-content'>
+                        <li><a href="aporeg.html">Registrar</a></li>
+                        <li><a href="apocon.html">Consultar</a></li>
+                        <li><a href="apomod.html">Modificar</a></li>
+                        <li><a href="apoeli.html">Eliminar</a></li>
+                    </ul>
+                    <li><a class='dropdown-button' href="#alumno" data-activates='alumno1'>Alumno<i class="mdi-navigation-arrow-drop-down  right"></i></a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id='alumno1' class='dropdown-content'>
+                        <li><a href="alureg.html">Registrar</a></li>
+                        <li><a href="alucon.html">Consultar</a></li>
+                        <li><a href="alumod.html">Modificar</a></li>
+                        <li><a href="alueli.html">Eliminar</a></li>
+                    </ul><li><a class='dropdown-button' href="#colegio1" data-activates='colegio1'>Colegio<i class="mdi-navigation-arrow-drop-down  right"></i></a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id='colegio1' class='dropdown-content'>
+                        <li><a href="colreg.html">Registrar</a></li>
+                    </ul><li><a class='dropdown-button' href="#pago1" data-activates='pago1'>Pago<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id='pago1' class='dropdown-content'>
+                        <li><a href="pagreg.html">Registrar</a></li>
+                        <li><a href="pagcon.html">Consultar</a></li>
+                        <li><a href="pagmod.html">Modificar</a></li>
+                    </ul>
+
+
+
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#contact">Contáctenos</a></li>
+
+
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="text_h center header cd-headline letters type">
+            <span>Transportes Tía Carola</span>
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">Modificacion de Alumno</b>
+
+            </span>
+        </h1>
+    </div>
+</div>
+<br>
+<br>
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div  class="col s12">
+                <div  class="col s12">
+                    <div class="input-field col s12">
+                        <input  id="consulta" type="text" class="validate">
+                        <label for="consulta">Ingresar Rut de Alumno</label>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input  id="nombre" type="text" class="validate" disabled="disabled">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input  id="apellido" type="text" class="validate" disabled="disabled">
+                            <label for="apellido">Apellido</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input  id="rut" type="text" class="validate" disabled="disabled">
+                            <label for="rut">Rut</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input  id="fecha " type="date" class="datepicker" disabled="disabled">
+                            <label for="fecha ">Fecha de Nacimiento</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="direccion" type="text" class="validate" disabled="disabled">
+                            <label for="direccion">Direccion</label>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input  id="rutapo" type="text" class="validate" disabled="disabled">
+                            <label for="rutapo">Rut Apoderado</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <select disabled="disabled">
+                                <option value="" disabled selected ></option>
+                                <option value="1">Moises Mussa</option>
+                                <option value="2">Saint John</option>
+                                <option value="3">Quimahue</option>
+                            </select>
+                            <label>Elegir Colegio</label>
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <br>
+                    <!-- Modal Trigger -->
+                    <div class="row center">
+                        <button data-target="modal1" class="btn modal-trigger light-blue">Modificar</button>
+                    </div>
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Advertencia de Modificacion</h4>
+                            <p>Al modificar un alumnos debera dejar un registro por la causal de dicha modificacion</p>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Causal</label>
+                                </div>
+                            </div>
+                        </div>
+
+                </form>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--  Scripts-->
+<script src="min/plugin-min.js"></script>
+<script src="min/custom-min.js"></script>
+<script>
+    $(document).ready(function() {
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
+</script>
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 30 // Creates a dropdown of 15 years to control year
+    });
+</script>
+
+<script>  $(document).ready(function() {
+    $('select').material_select();
+});
+</script>
+</body>
